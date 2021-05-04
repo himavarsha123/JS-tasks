@@ -16,7 +16,7 @@ Array.prototype.average = function() {
     if(this.length == 0) {
         return NaN;
     }
-    var sum = 0;
+    let sum = 0;
     this.forEach(element => {
         sum += element;
     });
@@ -24,7 +24,7 @@ Array.prototype.average = function() {
 }
 
 Array.prototype.sum = function() {
-    var sum = 0;
+    let sum = 0;
     this.forEach(element => {
         sum += element;
     });
