@@ -19,7 +19,7 @@ var Cat = function (name, weight) {
 
 Cat.catInstances = [];
 Cat.averageWeight = function() {
-  var totalWeight = 0;
+  let totalWeight = 0;
   Cat.catInstances.forEach(cat => {
     totalWeight += cat.weight;
   });

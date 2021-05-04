@@ -2,7 +2,7 @@
 // depending on the arguments, that were applied to the function.
 function cache(func) {
     return function(...args) {
-        var argsConcat = func.prototype.constructor;
+        let argsConcat = func.prototype.constructor;
         args.forEach(arg => {
             if(typeof arg === "object") {
                 argsConcat = argsConcat + JSON.stringify(arg);
